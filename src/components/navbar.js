@@ -71,18 +71,22 @@ export function Navbar(props) {
         <div className="nav-part">
           <div className="nav-header">Playlist</div>
           <ul className="nav-list">
+            <Link to="/playlist">
             <li className="nav-item">
               <span className="icon">
                 <img src="/icons/icon-note.svg" alt="" />
               </span>
               Workout
             </li>
+            </Link>
+            <Link to="/playlist">
             <li className="nav-item">
               <span className="icon">
                 <img src="/icons/icon-note.svg" alt="" />
               </span>
               Yoga
             </li>
+            </Link>
             <li className="nav-item">
               <span className="icon">
                 <img src="/icons/icon-headset.svg" alt="" />
