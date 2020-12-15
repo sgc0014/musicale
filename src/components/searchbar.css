@@ -1,0 +1,33 @@
+.top-search-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 1px 0 #0000000F;
+    margin-left: 238px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+.icon{
+    margin: 0 18px;
+    cursor: pointer;
+}
+.start{
+    display: flex;
+    padding-left: 10px;
+}
+.search-input{
+    background: #F5F5FB;
+    border: none;
+    border-radius: 21px;
+    width: 427px;
+    padding-left: 37px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 30px;
+    outline: 0;
+}
+

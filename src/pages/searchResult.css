@@ -1,0 +1,32 @@
+.concert-section {
+  margin-bottom: 33px;
+}
+
+.sub-header {
+  font-size: 22px;
+  margin: 15px 0;
+  font-family: Roboto-Medium;
+}
+.concert-card {
+  width: 300px;
+  height: 100px;
+  background: #4c4cab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+  opacity: 0.7;
+  border-radius: 8px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #ff808b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}

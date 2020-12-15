@@ -1,0 +1,27 @@
+.upper-part{
+    display: flex;
+    margin-bottom: 33px;
+}
+.playlist-left{
+    background: linear-gradient(357deg, #131237, #fff);
+    width: 276px;
+    height: 125px;
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+.playlist-header{
+    font-size: 25px;
+}
+.playlist-right{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.playlist-header-end> *{
+    margin: 0 12px;
+}

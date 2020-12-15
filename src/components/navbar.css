@@ -1,0 +1,55 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: #4c4cab;
+    color: #dcdcdc;
+    padding: 0;
+    left: 0;
+    overflow-y: auto;
+    height: 100%;
+    z-index: 999;
+    left: 0;
+    justify-content: space-between;
+   
+  }
+  .brand{
+    margin-left: 18px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-right: 5px;
+  }
+  .nav-part{
+    margin-bottom: 25px
+  }
+  .nav-list {
+    padding: 0px;
+  }
+  .nav-header {
+    color: #fff;
+    font-family: Roboto-Medium;
+    margin-left: 18px;
+  }
+  .nav-item {
+    list-style: none;
+    display: flex;
+    padding: 8px 0;
+    font-family: Roboto-Regular;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-item:hover{
+    background: #7070BC;
+  }
+  .nav-item > .icon, .create-playlist>.icon {
+    margin:0 18px;
+  }
+  
+  .create-playlist{
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(360deg, black, transparent);
+  }
