@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./track.css";
 export function Track(props) {
   const [favourite, setfavourite] = useState(false);
-  const [togglePlayer, settogglePlayer] = useState(false)
+
   const {title,artist,index} = props
   return (
     <>
@@ -12,12 +12,14 @@ export function Track(props) {
           {!favourite ? (
             <img
               className="heart"
+              alt=""
               src="/icons/icon-heart.svg"
               onClick={() => setfavourite(!favourite)}
             />
           ) : (
             <img
               className="heart"
+              alt=""
               src="/icons/icon-redHeart.svg"
               onClick={() => setfavourite(!favourite)}
             />

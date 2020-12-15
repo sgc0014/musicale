@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { FiHeart, FiMoreHorizontal, FiMoreVertical } from "react-icons/fi";
+import { FiHeart,  FiMoreVertical } from "react-icons/fi";
 import { useDispatch, useSelector } from "react-redux";
 import { Track } from "../components/track";
 import { fetchSongs, playFirstSong } from "../store/actions/songAction";
@@ -12,7 +12,7 @@ export function Playlist() {
     if (!songList.songs) {
       dispatch(fetchSongs());
     }
-  }, []);
+  }, [dispatch]);
 
   const playPlaylist = (e) => {
     e.preventDefault();

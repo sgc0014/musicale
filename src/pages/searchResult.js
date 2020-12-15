@@ -1,16 +1,27 @@
-import React from "react";
-import { Layout } from "../components/layout.js";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Track } from "../components/track.js";
+import { fetchSongs } from "../store/actions/songAction";
 import "./searchResult.css";
 
 export function Searchresult(props) {
-  const searchTerm = props.match.params.query;
+  const keyword = props.match.params.query;
+  const dispatch = useDispatch();
+  const songList = useSelector((state) => state.songList);
 
-  return (
+  useEffect(() => {
+    
+      dispatch(fetchSongs(keyword));
+    
+   
+  }, [dispatch,keyword]);
+
+  return  (
     <>
       <main>
         <header className="body-header">
-          Search Result For "{searchTerm}"
+         
+          Search Result For "{keyword}"
         </header>
         <div className="concert-section">
           <header className="sub-header">Live Concert</header>
@@ -27,8 +38,16 @@ export function Searchresult(props) {
           <header className="sub-header">Tracks</header>
 
           <div className="track-list">
-            <Track />
-            <Track />
+            {songList.filteredSongs && songList.filteredSongs.length>0
+              ?  songList.filteredSongs.map((song, i) => (
+                  <Track
+                    title={song.title}
+                    artist={song.artist}
+                    index={i}
+                    key={i}
+                  />
+                ))
+              : "No songs found"}
           </div>
         </div>
       </main>

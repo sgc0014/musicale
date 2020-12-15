@@ -1,10 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navbar } from "./components/navbar";
 import { Radio } from "./pages/radio";
 import { Home } from "./pages/home";
-import { Musiccontroller } from "./components/musicController";
-import { Searchbar } from "./components/searchbar.js";
 import { Searchresult } from "./pages/searchResult";
 import { Layout } from "./components/layout";
 import { Playlist } from "./pages/playlist";

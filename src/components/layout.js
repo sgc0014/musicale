@@ -55,7 +55,7 @@ export function Layout(props) {
               </div>
             </div>
             <div className="upgrade-msg">
-              <img className="upgrade-icon" src="/icons/folder.svg" />
+              <img className="upgrade-icon" src="/icons/folder.svg" alt="" />
               <div className="msg">
                 Upgrade to <strong>PRO</strong> for more benefits
               </div>

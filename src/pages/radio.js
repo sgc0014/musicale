@@ -1,7 +1,5 @@
 import React from "react";
 import "./radio.css";
-import { Searchbar } from "../components/searchbar.js";
-import { Layout } from "../components/layout";
 import { Link } from "react-router-dom";
 
 export function Radio(props) {

@@ -46,6 +46,7 @@ export function Musiccontroller(props) {
             trackThickness={4}
             fillColor="#4C4CAB"
             trackShape="rounded"
+            value={10}
           />
            <div className="stoptime time">
             1:50

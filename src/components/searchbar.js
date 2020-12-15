@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "./searchbar.css";
 
 export function Searchbar(props) {
-  const history = useHistory()
+  const history = useHistory();
   const [searchTerm, setsearchTerm] = useState("")
 
   const handleSearch = (e) => {
